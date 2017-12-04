@@ -17,12 +17,11 @@ public class ArrayMethods4
 	{
 		int pivot = list1[back];
 		int idx = front-1;
-		for(int j = front; j < back; j++)
+		for(int j = front; j <= back; j++)
 		{
 			if(list1[j]<= pivot)
 			{
 				idx++;
-				
 				swap(list1, idx, j);
 			}
 		}
@@ -42,6 +41,7 @@ public class ArrayMethods4
 	
 	public static void customSort(int[] list)
 	{
+		int idx = list[0];
 		
 	}
 	public static void swap(int[] arr, int i, int j)
